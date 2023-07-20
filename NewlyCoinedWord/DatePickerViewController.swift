@@ -16,6 +16,8 @@ final class DatePickerViewController: UIViewController {
     @IBOutlet var background300ImageView: UIImageView!
     @IBOutlet var background400ImageView: UIImageView!
 
+    @IBOutlet var shadowEffectView: [UIView]!
+
     @IBOutlet var date100Label: UILabel!
     @IBOutlet var date200Label: UILabel!
     @IBOutlet var date300Label: UILabel!
@@ -27,27 +29,17 @@ final class DatePickerViewController: UIViewController {
     }
 
     @IBAction func didDatePickerSelected(_ sender: UIDatePicker) {
-        let date = sender.date
-        guard let dateAfter100d = Calendar.current.date(byAdding: .day, value: 100, to: date),
-              let dateAfter200d = Calendar.current.date(byAdding: .day, value: 200, to: date),
-              let dateAfter300d = Calendar.current.date(byAdding: .day, value: 300, to: date),
-              let dateAfter400d = Calendar.current.date(byAdding: .day, value: 400, to: date)
-        else { return }
-
-        // DateFormatter: 1. 시간대 변경 2. 날짜 포맷 변경
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = .init(identifier: "ko_KR")
-        dateFormatter.dateFormat = "MM월 dd일, yyyy년"
-
-        date100Label.text = dateFormatter.string(from: dateAfter100d)
-        date200Label.text = dateFormatter.string(from: dateAfter200d)
-        date300Label.text = dateFormatter.string(from: dateAfter300d)
-        date400Label.text = dateFormatter.string(from: dateAfter400d)
+        updateBottomCardView(date: sender.date)
     }
 
     private func configureUI() {
         configureDatePicker()
         configurationBottomCardView()
+        if #available(iOS 15.0, *) {
+            updateBottomCardView(date: Date.now)
+        } else {
+            updateBottomCardView(date: datePicker.date)
+        }
     }
 
     private func configureDatePicker() {
@@ -68,18 +60,33 @@ final class DatePickerViewController: UIViewController {
         ].forEach {
             guard let imageView = $0 else { return }
             imageView.layer.cornerRadius = 20.0
-            imageView.layer.shadowColor = UIColor.black.cgColor
-            imageView.layer.shadowOffset = .zero
-            imageView.layer.shadowRadius = 10.0
-            imageView.layer.shadowOpacity = 0.5
-            imageView.clipsToBounds = false
         }
 
-        [
-            date100Label, date200Label, date300Label, date400Label
-        ].forEach {
-            guard let label = $0 else { return }
-            label.textColor = .white
+        // IBOutletCollection 사용
+        shadowEffectView.forEach {
+            $0.layer.cornerRadius = 20.0
+            $0.layer.shadowColor = UIColor.black.cgColor
+            $0.layer.shadowOffset = .zero
+            $0.layer.shadowRadius = 10.0
+            $0.layer.shadowOpacity = 0.5
         }
+    }
+
+    private func updateBottomCardView(date: Date) {
+        guard let dateAfter100d = Calendar.current.date(byAdding: .day, value: 100, to: date),
+              let dateAfter200d = Calendar.current.date(byAdding: .day, value: 200, to: date),
+              let dateAfter300d = Calendar.current.date(byAdding: .day, value: 300, to: date),
+              let dateAfter400d = Calendar.current.date(byAdding: .day, value: 400, to: date)
+        else { return }
+
+        // DateFormatter: 1. 시간대 변경 2. 날짜 포맷 변경
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = .init(identifier: "ko_KR")
+        dateFormatter.dateFormat = "MM월 dd일, yyyy년"
+
+        date100Label.text = dateFormatter.string(from: dateAfter100d)
+        date200Label.text = dateFormatter.string(from: dateAfter200d)
+        date300Label.text = dateFormatter.string(from: dateAfter300d)
+        date400Label.text = dateFormatter.string(from: dateAfter400d)
     }
 }

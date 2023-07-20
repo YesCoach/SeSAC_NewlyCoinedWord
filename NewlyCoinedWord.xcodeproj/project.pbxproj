@@ -13,6 +13,7 @@
 		890113F72A68DABD0005F319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890113F62A68DABD0005F319 /* Assets.xcassets */; };
 		890113FA2A68DABD0005F319 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890113F82A68DABD0005F319 /* LaunchScreen.storyboard */; };
 		890114022A68DBE90005F319 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890114012A68DBE90005F319 /* DatePickerViewController.swift */; };
+		890114042A6923120005F319 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890114032A6923120005F319 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		890113F92A68DABD0005F319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		890113FB2A68DABD0005F319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		890114012A68DBE90005F319 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		890114032A6923120005F319 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				890113F32A68DABB0005F319 /* Main.storyboard */,
 				890113F82A68DABD0005F319 /* LaunchScreen.storyboard */,
 				890114012A68DBE90005F319 /* DatePickerViewController.swift */,
+				890114032A6923120005F319 /* TestViewController.swift */,
 				890113F62A68DABD0005F319 /* Assets.xcassets */,
 				890113FB2A68DABD0005F319 /* Info.plist */,
 			);
@@ -140,6 +143,7 @@
 			files = (
 				890113EE2A68DABB0005F319 /* AppDelegate.swift in Sources */,
 				890113F02A68DABB0005F319 /* SceneDelegate.swift in Sources */,
+				890114042A6923120005F319 /* TestViewController.swift in Sources */,
 				890114022A68DBE90005F319 /* DatePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
