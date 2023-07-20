@@ -16,6 +16,7 @@
 		890114042A6923120005F319 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890114032A6923120005F319 /* TestViewController.swift */; };
 		890114062A692E910005F319 /* NewlyCoinedWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890114052A692E910005F319 /* NewlyCoinedWordViewController.swift */; };
 		8901140E2A6935760005F319 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901140D2A6935760005F319 /* UIColor+.swift */; };
+		890114102A6937F60005F319 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901140F2A6937F60005F319 /* UITextField+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		890114032A6923120005F319 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		890114052A692E910005F319 /* NewlyCoinedWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlyCoinedWordViewController.swift; sourceTree = "<group>"; };
 		8901140D2A6935760005F319 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		8901140F2A6937F60005F319 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				8901140D2A6935760005F319 /* UIColor+.swift */,
+				8901140F2A6937F60005F319 /* UITextField+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				890113EE2A68DABB0005F319 /* AppDelegate.swift in Sources */,
 				890113F02A68DABB0005F319 /* SceneDelegate.swift in Sources */,
+				890114102A6937F60005F319 /* UITextField+.swift in Sources */,
 				890114042A6923120005F319 /* TestViewController.swift in Sources */,
 				890114022A68DBE90005F319 /* DatePickerViewController.swift in Sources */,
 				890114062A692E910005F319 /* NewlyCoinedWordViewController.swift in Sources */,

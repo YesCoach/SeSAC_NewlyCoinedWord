@@ -19,7 +19,8 @@ class NewlyCoinedWordViewController: UIViewController {
 
 private extension NewlyCoinedWordViewController {
     func configureUI() {
+        searchTextField.addLeftPadding(16.0)
         searchTextField.layer.borderColor = UIColor.systemBlack?.cgColor
-        searchTextField.layer.borderWidth = 3.0
+        searchTextField.layer.borderWidth = 4.0
     }
 }
