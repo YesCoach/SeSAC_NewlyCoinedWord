@@ -14,6 +14,8 @@
 		890113FA2A68DABD0005F319 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890113F82A68DABD0005F319 /* LaunchScreen.storyboard */; };
 		890114022A68DBE90005F319 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890114012A68DBE90005F319 /* DatePickerViewController.swift */; };
 		890114042A6923120005F319 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890114032A6923120005F319 /* TestViewController.swift */; };
+		890114062A692E910005F319 /* NewlyCoinedWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890114052A692E910005F319 /* NewlyCoinedWordViewController.swift */; };
+		8901140E2A6935760005F319 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901140D2A6935760005F319 /* UIColor+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		890113FB2A68DABD0005F319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		890114012A68DBE90005F319 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		890114032A6923120005F319 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		890114052A692E910005F319 /* NewlyCoinedWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlyCoinedWordViewController.swift; sourceTree = "<group>"; };
+		8901140D2A6935760005F319 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +64,40 @@
 			children = (
 				890113ED2A68DABB0005F319 /* AppDelegate.swift */,
 				890113EF2A68DABB0005F319 /* SceneDelegate.swift */,
+				8901140C2A6935670005F319 /* Extensions */,
+				890114072A6932260005F319 /* DatePicker */,
+				890114082A6932360005F319 /* NewlyCoinedWord */,
 				890113F32A68DABB0005F319 /* Main.storyboard */,
 				890113F82A68DABD0005F319 /* LaunchScreen.storyboard */,
-				890114012A68DBE90005F319 /* DatePickerViewController.swift */,
-				890114032A6923120005F319 /* TestViewController.swift */,
 				890113F62A68DABD0005F319 /* Assets.xcassets */,
 				890113FB2A68DABD0005F319 /* Info.plist */,
 			);
 			path = NewlyCoinedWord;
+			sourceTree = "<group>";
+		};
+		890114072A6932260005F319 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				890114012A68DBE90005F319 /* DatePickerViewController.swift */,
+				890114032A6923120005F319 /* TestViewController.swift */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		890114082A6932360005F319 /* NewlyCoinedWord */ = {
+			isa = PBXGroup;
+			children = (
+				890114052A692E910005F319 /* NewlyCoinedWordViewController.swift */,
+			);
+			path = NewlyCoinedWord;
+			sourceTree = "<group>";
+		};
+		8901140C2A6935670005F319 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8901140D2A6935760005F319 /* UIColor+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +175,8 @@
 				890113F02A68DABB0005F319 /* SceneDelegate.swift in Sources */,
 				890114042A6923120005F319 /* TestViewController.swift in Sources */,
 				890114022A68DBE90005F319 /* DatePickerViewController.swift in Sources */,
+				890114062A692E910005F319 /* NewlyCoinedWordViewController.swift in Sources */,
+				8901140E2A6935760005F319 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

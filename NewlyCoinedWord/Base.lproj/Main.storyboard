@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2vh-DH-j0j">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -243,6 +244,57 @@
             </objects>
             <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
         </scene>
+        <!--Newly Coined Word View Controller-->
+        <scene sceneID="1s2-gi-BzJ">
+            <objects>
+                <viewController id="2vh-DH-j0j" customClass="NewlyCoinedWordViewController" customModule="NewlyCoinedWord" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uoG-jM-L2C">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="신조어를 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N39-GC-u76">
+                                <rect key="frame" x="16" y="75" width="313" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caK-ny-w5i">
+                                <rect key="frame" x="329" y="75" width="48" height="48"/>
+                                <color key="backgroundColor" name="systemBlack"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="2gj-9s-XS7"/>
+                                    <constraint firstAttribute="width" constant="48" id="Abh-xX-NPI"/>
+                                </constraints>
+                                <color key="tintColor" name="systemWhite"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="magnifyingglass" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OU-5y-Rcr">
+                                <rect key="frame" x="175" y="394" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FjC-DH-HNm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="caK-ny-w5i" firstAttribute="top" secondItem="N39-GC-u76" secondAttribute="top" id="4RD-ka-Dso"/>
+                            <constraint firstItem="FjC-DH-HNm" firstAttribute="trailing" secondItem="caK-ny-w5i" secondAttribute="trailing" constant="16" id="H9J-oL-9Rf"/>
+                            <constraint firstItem="N39-GC-u76" firstAttribute="bottom" secondItem="caK-ny-w5i" secondAttribute="bottom" id="cn3-CZ-DH1"/>
+                            <constraint firstItem="N39-GC-u76" firstAttribute="leading" secondItem="FjC-DH-HNm" secondAttribute="leading" constant="16" id="hu3-Kb-YKP"/>
+                            <constraint firstItem="caK-ny-w5i" firstAttribute="leading" secondItem="N39-GC-u76" secondAttribute="trailing" id="wv3-XR-Zc0"/>
+                            <constraint firstItem="N39-GC-u76" firstAttribute="top" secondItem="FjC-DH-HNm" secondAttribute="top" constant="16" id="xK0-mU-SOD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchTextField" destination="N39-GC-u76" id="OSN-Oe-iyD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gti-yO-epH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.091603053435115" y="740.84507042253529"/>
+        </scene>
         <!--Test View Controller-->
         <scene sceneID="bmK-Fc-gdA">
             <objects>
@@ -273,6 +325,13 @@
         <image name="churros" width="200" height="300"/>
         <image name="doughnut" width="200" height="251"/>
         <image name="icecream" width="200" height="300"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <namedColor name="systemBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="systemWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
