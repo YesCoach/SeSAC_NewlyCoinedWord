@@ -59,9 +59,9 @@
 				890113ED2A68DABB0005F319 /* AppDelegate.swift */,
 				890113EF2A68DABB0005F319 /* SceneDelegate.swift */,
 				890113F32A68DABB0005F319 /* Main.storyboard */,
+				890113F82A68DABD0005F319 /* LaunchScreen.storyboard */,
 				890114012A68DBE90005F319 /* DatePickerViewController.swift */,
 				890113F62A68DABD0005F319 /* Assets.xcassets */,
-				890113F82A68DABD0005F319 /* LaunchScreen.storyboard */,
 				890113FB2A68DABD0005F319 /* Info.plist */,
 			);
 			path = NewlyCoinedWord;

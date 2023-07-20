@@ -21,13 +21,23 @@ class DatePickerViewController: UIViewController {
     }
 
     @IBAction func didDatePickerSelected(_ sender: UIDatePicker) {
-        print(sender.date)
+        // DateFormatter: 1. 시간대 변경 2. 날짜 포맷 변경
+        // +100일 뒤
+        guard let result = Calendar.current.date(byAdding: .day, value: 100, to: sender.date)
+        else { return }
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = .init(identifier: "ko_KR")
+        dateFormatter.dateFormat = "MM월 dd일, yyyy년"
+
+        date100Label.text = dateFormatter.string(from: result)
     }
 
     func configureUI() {
         configureDatePicker()
         background100ImageView.backgroundColor = .green
         date100Label.backgroundColor = .green
+        date100Label.adjustsFontSizeToFitWidth = true
     }
 
     func configureDatePicker() {
