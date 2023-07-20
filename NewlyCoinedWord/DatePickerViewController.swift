@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DatePickerViewController.swift
 //  NewlyCoinedWord
 //
 //  Created by 박태현 on 2023/07/20.
@@ -7,13 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DatePickerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
 }
-
