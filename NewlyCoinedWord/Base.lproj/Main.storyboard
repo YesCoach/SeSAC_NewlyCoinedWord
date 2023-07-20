@@ -252,7 +252,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="신조어를 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N39-GC-u76">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="신조어를 입력하세요" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N39-GC-u76">
                                 <rect key="frame" x="16" y="75" width="313" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
@@ -267,6 +267,9 @@
                                 <color key="tintColor" name="systemWhite"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="magnifyingglass" catalog="system"/>
+                                <connections>
+                                    <action selector="didSearchButtonTouched:" destination="2vh-DH-j0j" eventType="touchUpInside" id="aXq-G8-ca4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OU-5y-Rcr">
                                 <rect key="frame" x="175" y="394" width="42" height="21"/>
@@ -278,6 +281,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FjC-DH-HNm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="caK-ny-w5i" firstAttribute="top" secondItem="N39-GC-u76" secondAttribute="top" id="4RD-ka-Dso"/>
                             <constraint firstItem="FjC-DH-HNm" firstAttribute="trailing" secondItem="caK-ny-w5i" secondAttribute="trailing" constant="16" id="H9J-oL-9Rf"/>
@@ -286,12 +290,21 @@
                             <constraint firstItem="caK-ny-w5i" firstAttribute="leading" secondItem="N39-GC-u76" secondAttribute="trailing" id="wv3-XR-Zc0"/>
                             <constraint firstItem="N39-GC-u76" firstAttribute="top" secondItem="FjC-DH-HNm" secondAttribute="top" constant="16" id="xK0-mU-SOD"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="vMy-Gx-fBU" appends="YES" id="L9R-qs-Ymr"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="searchResultLabel" destination="0OU-5y-Rcr" id="d4P-8V-Df3"/>
                         <outlet property="searchTextField" destination="N39-GC-u76" id="OSN-Oe-iyD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gti-yO-epH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vMy-Gx-fBU">
+                    <connections>
+                        <action selector="didBackgroundTouched:" destination="2vh-DH-j0j" id="rlz-Q1-S0W"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="48.091603053435115" y="740.84507042253529"/>
         </scene>

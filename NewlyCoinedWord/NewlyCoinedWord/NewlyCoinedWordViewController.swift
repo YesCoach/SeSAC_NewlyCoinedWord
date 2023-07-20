@@ -10,10 +10,19 @@ import UIKit
 class NewlyCoinedWordViewController: UIViewController {
 
     @IBOutlet var searchTextField: UITextField!
+    @IBOutlet var searchResultLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+    }
+
+    @IBAction func didBackgroundTouched(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+
+    @IBAction func didSearchButtonTouched(_ sender: UIButton) {
+        view.endEditing(true)
     }
 }
 
