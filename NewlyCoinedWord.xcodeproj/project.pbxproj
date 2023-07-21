@@ -19,6 +19,7 @@
 		890114142A6A0F0F0005F319 /* AutoLayoutPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890114132A6A0F0F0005F319 /* AutoLayoutPractice.storyboard */; };
 		890114162A6A10DE0005F319 /* AutoLayoutExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890114152A6A10DE0005F319 /* AutoLayoutExample.storyboard */; };
 		8901142B2A6A4AF80005F319 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901142A2A6A4AF80005F319 /* WordViewController.swift */; };
+		8901142E2A6A7FD60005F319 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901142D2A6A7FD60005F319 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		890114132A6A0F0F0005F319 /* AutoLayoutPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayoutPractice.storyboard; sourceTree = "<group>"; };
 		890114152A6A10DE0005F319 /* AutoLayoutExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayoutExample.storyboard; sourceTree = "<group>"; };
 		8901142A2A6A4AF80005F319 /* WordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
+		8901142D2A6A7FD60005F319 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				890114072A6932260005F319 /* DatePicker */,
 				890114082A6932360005F319 /* NewlyCoinedWord */,
 				8901142C2A6A4AFD0005F319 /* AutoLayoutPractice */,
+				8901142D2A6A7FD60005F319 /* ProfileViewController.swift */,
 				890113F32A68DABB0005F319 /* Main.storyboard */,
 				890113F82A68DABD0005F319 /* LaunchScreen.storyboard */,
 				890113F62A68DABD0005F319 /* Assets.xcassets */,
@@ -196,6 +199,7 @@
 				890114022A68DBE90005F319 /* DatePickerViewController.swift in Sources */,
 				890114062A692E910005F319 /* NewlyCoinedWordViewController.swift in Sources */,
 				8901142B2A6A4AF80005F319 /* WordViewController.swift in Sources */,
+				8901142E2A6A7FD60005F319 /* ProfileViewController.swift in Sources */,
 				8901140E2A6935760005F319 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
