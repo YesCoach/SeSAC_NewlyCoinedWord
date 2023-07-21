@@ -21,6 +21,16 @@ class NewlyCoinedWordViewController: UIViewController {
         configureData()
     }
 
+/*
+    func getRandomWord() -> String {
+        let random = ["고래밥", "칙촉", "카스타드", "메로나", "월드콘"]
+        let result = random.randomElement()!
+        print(result)
+
+        return result
+    }
+*/
+
     // For Dynamic Color with CGColor
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
@@ -77,6 +87,9 @@ private extension NewlyCoinedWordViewController {
     }
 
     func searchNewlyCoinedWord(_ keyword: String) {
+        if let result = data[keyword] {
+            searchResultLabel.text = result
+        }
 
     /*
         if keyword == "반모" {
@@ -102,8 +115,5 @@ private extension NewlyCoinedWordViewController {
         }
      */
 
-        if let result = data[keyword] {
-            searchResultLabel.text = result
-        }
     }
 }
