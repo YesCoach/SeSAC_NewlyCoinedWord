@@ -274,50 +274,67 @@
                                     <action selector="didSearchButtonTouched:" destination="2vh-DH-j0j" eventType="touchUpInside" id="aXq-G8-ca4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OU-5y-Rcr">
-                                <rect key="frame" x="76.666666666666686" y="438.66666666666669" width="240" height="0.0"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="0oM-27-CCb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duf-eu-KR4">
-                                <rect key="frame" x="16" y="139" width="68.333333333333329" height="35"/>
+                                <rect key="frame" x="16" y="139" width="37" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="tintColor" name="customBlackWhite"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="세최미"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="세최미"/>
                                 <connections>
                                     <action selector="didWordButtonTouched:" destination="cck-Lp-L5b" eventType="touchUpInside" id="8jX-R6-f8W"/>
                                     <action selector="didWordButtonTouched:" destination="2vh-DH-j0j" eventType="touchUpInside" id="vXL-Ou-fvI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJZ-n5-Nq4">
-                                <rect key="frame" x="92.333333333333343" y="139" width="68.333333333333343" height="35"/>
+                                <rect key="frame" x="61" y="139" width="37" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="tintColor" name="customBlackWhite"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="햄최몇"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="햄최몇"/>
                                 <connections>
                                     <action selector="didWordButtonTouched:" destination="2vh-DH-j0j" eventType="touchUpInside" id="k39-tU-hbw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a56-ya-wd4">
-                                <rect key="frame" x="168.66666666666666" y="139" width="54" height="35"/>
+                                <rect key="frame" x="106" y="139" width="30" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="tintColor" name="customBlackWhite"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="반모"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="반모"/>
                                 <connections>
                                     <action selector="didWordButtonTouched:" destination="2vh-DH-j0j" eventType="touchUpInside" id="Xad-lt-yTN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaC-KL-LAm">
-                                <rect key="frame" x="230.66666666666663" y="139" width="98" height="35"/>
+                                <rect key="frame" x="144" y="139" width="61" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="tintColor" name="customBlackWhite"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="알잘딱깔센"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="알잘딱깔센"/>
                                 <connections>
                                     <action selector="didWordButtonTouched:" destination="2vh-DH-j0j" eventType="touchUpInside" id="bma-zX-khR"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="FLj-YW-h80">
+                                <rect key="frame" x="0.0" y="326" width="393" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="bkQ-zc-mZU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OU-5y-Rcr">
+                                <rect key="frame" x="40" y="438.66666666666669" width="313" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHG-Zn-gCh">
+                                <rect key="frame" x="213" y="139" width="37" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="tintColor" name="customBlackWhite"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="오운완"/>
+                                <connections>
+                                    <action selector="didWordButtonTouched:" destination="2vh-DH-j0j" eventType="touchUpInside" id="azp-IQ-ozc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -326,10 +343,16 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="0OU-5y-Rcr" firstAttribute="centerY" secondItem="FjC-DH-HNm" secondAttribute="centerY" id="0Oa-63-vzI"/>
+                            <constraint firstItem="FjC-DH-HNm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PHG-Zn-gCh" secondAttribute="trailing" constant="16" id="0da-tA-Lgp"/>
+                            <constraint firstItem="FLj-YW-h80" firstAttribute="leading" secondItem="FjC-DH-HNm" secondAttribute="leading" id="2TK-RI-T2L"/>
                             <constraint firstItem="caK-ny-w5i" firstAttribute="top" secondItem="N39-GC-u76" secondAttribute="top" id="4RD-ka-Dso"/>
                             <constraint firstItem="0OU-5y-Rcr" firstAttribute="centerX" secondItem="FjC-DH-HNm" secondAttribute="centerX" id="9Wa-gP-kvH"/>
                             <constraint firstItem="aaC-KL-LAm" firstAttribute="leading" secondItem="a56-ya-wd4" secondAttribute="trailing" constant="8" id="Dwg-ZI-b6e"/>
                             <constraint firstItem="FjC-DH-HNm" firstAttribute="trailing" secondItem="caK-ny-w5i" secondAttribute="trailing" constant="16" id="H9J-oL-9Rf"/>
+                            <constraint firstItem="PHG-Zn-gCh" firstAttribute="leading" secondItem="aaC-KL-LAm" secondAttribute="trailing" constant="8" id="OLA-pj-FU2"/>
+                            <constraint firstItem="FjC-DH-HNm" firstAttribute="trailing" secondItem="FLj-YW-h80" secondAttribute="trailing" id="Oh0-ae-ZET"/>
+                            <constraint firstItem="0OU-5y-Rcr" firstAttribute="leading" secondItem="uoG-jM-L2C" secondAttribute="leading" constant="40" id="Rbk-v8-NjH"/>
+                            <constraint firstAttribute="trailing" secondItem="0OU-5y-Rcr" secondAttribute="trailing" constant="40" id="Tkq-pe-bID"/>
                             <constraint firstItem="duf-eu-KR4" firstAttribute="top" secondItem="N39-GC-u76" secondAttribute="bottom" constant="16" id="ZGM-e8-YaJ"/>
                             <constraint firstItem="a56-ya-wd4" firstAttribute="top" secondItem="duf-eu-KR4" secondAttribute="top" id="aHa-9H-dJ9"/>
                             <constraint firstItem="RJZ-n5-Nq4" firstAttribute="top" secondItem="duf-eu-KR4" secondAttribute="top" id="ajp-jl-1dZ"/>
@@ -337,6 +360,8 @@
                             <constraint firstItem="N39-GC-u76" firstAttribute="leading" secondItem="FjC-DH-HNm" secondAttribute="leading" constant="16" id="hu3-Kb-YKP"/>
                             <constraint firstItem="RJZ-n5-Nq4" firstAttribute="leading" secondItem="duf-eu-KR4" secondAttribute="trailing" constant="8" id="qhy-TY-gOz"/>
                             <constraint firstItem="a56-ya-wd4" firstAttribute="leading" secondItem="RJZ-n5-Nq4" secondAttribute="trailing" constant="8" id="tgp-Pn-PmP"/>
+                            <constraint firstItem="PHG-Zn-gCh" firstAttribute="top" secondItem="duf-eu-KR4" secondAttribute="top" id="uUI-Ia-KzB"/>
+                            <constraint firstItem="FLj-YW-h80" firstAttribute="centerY" secondItem="uoG-jM-L2C" secondAttribute="centerY" id="vzU-6S-FrP"/>
                             <constraint firstItem="aaC-KL-LAm" firstAttribute="top" secondItem="duf-eu-KR4" secondAttribute="top" id="wZ8-fh-pty"/>
                             <constraint firstItem="caK-ny-w5i" firstAttribute="leading" secondItem="N39-GC-u76" secondAttribute="trailing" id="wv3-XR-Zc0"/>
                             <constraint firstItem="duf-eu-KR4" firstAttribute="leading" secondItem="N39-GC-u76" secondAttribute="leading" id="x5h-cq-4cp"/>
@@ -353,6 +378,7 @@
                         <outletCollection property="newWordButton" destination="RJZ-n5-Nq4" collectionClass="NSMutableArray" id="V9B-0z-wJ9"/>
                         <outletCollection property="newWordButton" destination="a56-ya-wd4" collectionClass="NSMutableArray" id="A2j-SZ-6a6"/>
                         <outletCollection property="newWordButton" destination="aaC-KL-LAm" collectionClass="NSMutableArray" id="gDv-OK-TzL"/>
+                        <outletCollection property="newWordButton" destination="PHG-Zn-gCh" collectionClass="NSMutableArray" id="MKU-Nh-zdg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gti-yO-epH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -365,37 +391,69 @@
             </objects>
             <point key="canvasLocation" x="48.091603053435115" y="740.84507042253529"/>
         </scene>
-        <!--Test View Controller-->
-        <scene sceneID="bmK-Fc-gdA">
+        <!--View Controller-->
+        <scene sceneID="sdc-Fg-bSL">
             <objects>
-                <viewController id="Kba-cT-Rkg" customClass="TestViewController" customModule="NewlyCoinedWord" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YrF-oy-5QS">
+                <viewController id="379-j4-5bG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QTL-gq-BxZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cake" translatesAutoresizingMaskIntoConstraints="NO" id="dJR-Lj-KMZ">
-                                <rect key="frame" x="84" y="283" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tokyo_tower" translatesAutoresizingMaskIntoConstraints="NO" id="E4b-CI-oaa">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="Ona-sg-1QX"/>
+                        <viewLayoutGuide key="safeArea" id="oJS-1z-a3O"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="E4b-CI-oaa" secondAttribute="bottom" id="74M-2x-das"/>
+                            <constraint firstItem="oJS-1z-a3O" firstAttribute="trailing" secondItem="E4b-CI-oaa" secondAttribute="trailing" id="CcD-XG-imh"/>
+                            <constraint firstItem="E4b-CI-oaa" firstAttribute="leading" secondItem="oJS-1z-a3O" secondAttribute="leading" id="IQG-se-J5i"/>
+                            <constraint firstItem="E4b-CI-oaa" firstAttribute="top" secondItem="QTL-gq-BxZ" secondAttribute="top" id="Ruw-ra-x9L"/>
+                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="imageView" destination="dJR-Lj-KMZ" id="8dc-6c-2PG"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="Q5A-yM-HO6">
+                        <barButtonItem key="leftBarButtonItem" image="xmark" catalog="system" id="2rI-aQ-tTf">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="pencil.circle" catalog="system" id="h7K-PH-kdM">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T1L-Ag-5sY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OzP-8o-UMY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1211" y="-2"/>
+            <point key="canvasLocation" x="2478.6259541984732" y="732.3943661971831"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zDu-AK-gl5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="607-7I-5yv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N24-ca-3fV">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="379-j4-5bG" kind="relationship" relationship="rootViewController" id="ZHg-aK-jhD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xIM-C9-NFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1551.9083969465648" y="732.3943661971831"/>
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="300" height="300"/>
         <image name="cake" width="200" height="267"/>
         <image name="churros" width="200" height="300"/>
         <image name="doughnut" width="200" height="251"/>
         <image name="icecream" width="200" height="300"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="pencil.circle" catalog="system" width="128" height="123"/>
+        <image name="tokyo_tower" width="671.66668701171875" height="671.66668701171875"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="customBlackWhite">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

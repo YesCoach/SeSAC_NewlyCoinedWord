@@ -13,7 +13,6 @@
 		890113F72A68DABD0005F319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890113F62A68DABD0005F319 /* Assets.xcassets */; };
 		890113FA2A68DABD0005F319 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890113F82A68DABD0005F319 /* LaunchScreen.storyboard */; };
 		890114022A68DBE90005F319 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890114012A68DBE90005F319 /* DatePickerViewController.swift */; };
-		890114042A6923120005F319 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890114032A6923120005F319 /* TestViewController.swift */; };
 		890114062A692E910005F319 /* NewlyCoinedWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890114052A692E910005F319 /* NewlyCoinedWordViewController.swift */; };
 		8901140E2A6935760005F319 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901140D2A6935760005F319 /* UIColor+.swift */; };
 		890114102A6937F60005F319 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901140F2A6937F60005F319 /* UITextField+.swift */; };
@@ -31,7 +30,6 @@
 		890113F92A68DABD0005F319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		890113FB2A68DABD0005F319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		890114012A68DBE90005F319 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
-		890114032A6923120005F319 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		890114052A692E910005F319 /* NewlyCoinedWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlyCoinedWordViewController.swift; sourceTree = "<group>"; };
 		8901140D2A6935760005F319 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		8901140F2A6937F60005F319 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
@@ -88,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				890114012A68DBE90005F319 /* DatePickerViewController.swift */,
-				890114032A6923120005F319 /* TestViewController.swift */,
 			);
 			path = DatePicker;
 			sourceTree = "<group>";
@@ -196,7 +193,6 @@
 				890113EE2A68DABB0005F319 /* AppDelegate.swift in Sources */,
 				890113F02A68DABB0005F319 /* SceneDelegate.swift in Sources */,
 				890114102A6937F60005F319 /* UITextField+.swift in Sources */,
-				890114042A6923120005F319 /* TestViewController.swift in Sources */,
 				890114022A68DBE90005F319 /* DatePickerViewController.swift in Sources */,
 				890114062A692E910005F319 /* NewlyCoinedWordViewController.swift in Sources */,
 				8901142B2A6A4AF80005F319 /* WordViewController.swift in Sources */,

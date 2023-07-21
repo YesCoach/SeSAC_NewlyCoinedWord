@@ -74,8 +74,9 @@ private extension NewlyCoinedWordViewController {
         searchTextField.layer.borderWidth = 4.0
 
         newWordButton.forEach {
-            $0.layer.cornerRadius = 15.0
+            $0.layer.cornerRadius = 5.0
             $0.layer.borderWidth = 2.0
+            $0.contentEdgeInsets = .init(top: 4, left: 8, bottom: 4, right: 8)
         }
     }
 
