@@ -256,6 +256,9 @@
                                 <rect key="frame" x="16" y="75" width="313" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="didKeyboardReturnEntered:" destination="2vh-DH-j0j" eventType="editingDidEndOnExit" id="yFW-VF-Dm2"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caK-ny-w5i">
                                 <rect key="frame" x="329" y="75" width="48" height="48"/>
@@ -280,6 +283,43 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duf-eu-KR4">
+                                <rect key="frame" x="16" y="139" width="68.333333333333329" height="35"/>
+                                <color key="tintColor" name="customBlackWhite"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="세최미"/>
+                                <connections>
+                                    <action selector="didWordButtonTouched:" destination="cck-Lp-L5b" eventType="touchUpInside" id="8jX-R6-f8W"/>
+                                    <action selector="didWordButtonTouched:" destination="2vh-DH-j0j" eventType="touchUpInside" id="vXL-Ou-fvI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJZ-n5-Nq4">
+                                <rect key="frame" x="92.333333333333343" y="139" width="68.333333333333343" height="35"/>
+                                <color key="tintColor" name="customBlackWhite"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="햄최몇"/>
+                                <connections>
+                                    <action selector="didWordButtonTouched:" destination="2vh-DH-j0j" eventType="touchUpInside" id="k39-tU-hbw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a56-ya-wd4">
+                                <rect key="frame" x="168.66666666666666" y="139" width="54" height="35"/>
+                                <color key="tintColor" name="customBlackWhite"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="반모"/>
+                                <connections>
+                                    <action selector="didWordButtonTouched:" destination="2vh-DH-j0j" eventType="touchUpInside" id="Xad-lt-yTN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaC-KL-LAm">
+                                <rect key="frame" x="230.66666666666663" y="139" width="98" height="35"/>
+                                <color key="tintColor" name="customBlackWhite"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="알잘딱깔센"/>
+                                <connections>
+                                    <action selector="didWordButtonTouched:" destination="2vh-DH-j0j" eventType="touchUpInside" id="bma-zX-khR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FjC-DH-HNm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -288,10 +328,18 @@
                             <constraint firstItem="0OU-5y-Rcr" firstAttribute="centerY" secondItem="FjC-DH-HNm" secondAttribute="centerY" id="0Oa-63-vzI"/>
                             <constraint firstItem="caK-ny-w5i" firstAttribute="top" secondItem="N39-GC-u76" secondAttribute="top" id="4RD-ka-Dso"/>
                             <constraint firstItem="0OU-5y-Rcr" firstAttribute="centerX" secondItem="FjC-DH-HNm" secondAttribute="centerX" id="9Wa-gP-kvH"/>
+                            <constraint firstItem="aaC-KL-LAm" firstAttribute="leading" secondItem="a56-ya-wd4" secondAttribute="trailing" constant="8" id="Dwg-ZI-b6e"/>
                             <constraint firstItem="FjC-DH-HNm" firstAttribute="trailing" secondItem="caK-ny-w5i" secondAttribute="trailing" constant="16" id="H9J-oL-9Rf"/>
+                            <constraint firstItem="duf-eu-KR4" firstAttribute="top" secondItem="N39-GC-u76" secondAttribute="bottom" constant="16" id="ZGM-e8-YaJ"/>
+                            <constraint firstItem="a56-ya-wd4" firstAttribute="top" secondItem="duf-eu-KR4" secondAttribute="top" id="aHa-9H-dJ9"/>
+                            <constraint firstItem="RJZ-n5-Nq4" firstAttribute="top" secondItem="duf-eu-KR4" secondAttribute="top" id="ajp-jl-1dZ"/>
                             <constraint firstItem="N39-GC-u76" firstAttribute="bottom" secondItem="caK-ny-w5i" secondAttribute="bottom" id="cn3-CZ-DH1"/>
                             <constraint firstItem="N39-GC-u76" firstAttribute="leading" secondItem="FjC-DH-HNm" secondAttribute="leading" constant="16" id="hu3-Kb-YKP"/>
+                            <constraint firstItem="RJZ-n5-Nq4" firstAttribute="leading" secondItem="duf-eu-KR4" secondAttribute="trailing" constant="8" id="qhy-TY-gOz"/>
+                            <constraint firstItem="a56-ya-wd4" firstAttribute="leading" secondItem="RJZ-n5-Nq4" secondAttribute="trailing" constant="8" id="tgp-Pn-PmP"/>
+                            <constraint firstItem="aaC-KL-LAm" firstAttribute="top" secondItem="duf-eu-KR4" secondAttribute="top" id="wZ8-fh-pty"/>
                             <constraint firstItem="caK-ny-w5i" firstAttribute="leading" secondItem="N39-GC-u76" secondAttribute="trailing" id="wv3-XR-Zc0"/>
+                            <constraint firstItem="duf-eu-KR4" firstAttribute="leading" secondItem="N39-GC-u76" secondAttribute="leading" id="x5h-cq-4cp"/>
                             <constraint firstItem="N39-GC-u76" firstAttribute="top" secondItem="FjC-DH-HNm" secondAttribute="top" constant="16" id="xK0-mU-SOD"/>
                         </constraints>
                         <connections>
@@ -301,9 +349,14 @@
                     <connections>
                         <outlet property="searchResultLabel" destination="0OU-5y-Rcr" id="d4P-8V-Df3"/>
                         <outlet property="searchTextField" destination="N39-GC-u76" id="OSN-Oe-iyD"/>
+                        <outletCollection property="newWordButton" destination="duf-eu-KR4" collectionClass="NSMutableArray" id="PSl-l2-l72"/>
+                        <outletCollection property="newWordButton" destination="RJZ-n5-Nq4" collectionClass="NSMutableArray" id="V9B-0z-wJ9"/>
+                        <outletCollection property="newWordButton" destination="a56-ya-wd4" collectionClass="NSMutableArray" id="A2j-SZ-6a6"/>
+                        <outletCollection property="newWordButton" destination="aaC-KL-LAm" collectionClass="NSMutableArray" id="gDv-OK-TzL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gti-yO-epH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="cck-Lp-L5b" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="vMy-Gx-fBU">
                     <connections>
                         <action selector="didBackgroundTouched:" destination="2vh-DH-j0j" id="rlz-Q1-S0W"/>

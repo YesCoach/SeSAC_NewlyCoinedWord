@@ -17,6 +17,9 @@
 		890114062A692E910005F319 /* NewlyCoinedWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890114052A692E910005F319 /* NewlyCoinedWordViewController.swift */; };
 		8901140E2A6935760005F319 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901140D2A6935760005F319 /* UIColor+.swift */; };
 		890114102A6937F60005F319 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901140F2A6937F60005F319 /* UITextField+.swift */; };
+		890114142A6A0F0F0005F319 /* AutoLayoutPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890114132A6A0F0F0005F319 /* AutoLayoutPractice.storyboard */; };
+		890114162A6A10DE0005F319 /* AutoLayoutExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890114152A6A10DE0005F319 /* AutoLayoutExample.storyboard */; };
+		8901142B2A6A4AF80005F319 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901142A2A6A4AF80005F319 /* WordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		890114052A692E910005F319 /* NewlyCoinedWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlyCoinedWordViewController.swift; sourceTree = "<group>"; };
 		8901140D2A6935760005F319 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		8901140F2A6937F60005F319 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		890114132A6A0F0F0005F319 /* AutoLayoutPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayoutPractice.storyboard; sourceTree = "<group>"; };
+		890114152A6A10DE0005F319 /* AutoLayoutExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayoutExample.storyboard; sourceTree = "<group>"; };
+		8901142A2A6A4AF80005F319 /* WordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 				8901140C2A6935670005F319 /* Extensions */,
 				890114072A6932260005F319 /* DatePicker */,
 				890114082A6932360005F319 /* NewlyCoinedWord */,
+				8901142C2A6A4AFD0005F319 /* AutoLayoutPractice */,
 				890113F32A68DABB0005F319 /* Main.storyboard */,
 				890113F82A68DABD0005F319 /* LaunchScreen.storyboard */,
 				890113F62A68DABD0005F319 /* Assets.xcassets */,
@@ -101,6 +108,16 @@
 				8901140F2A6937F60005F319 /* UITextField+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8901142C2A6A4AFD0005F319 /* AutoLayoutPractice */ = {
+			isa = PBXGroup;
+			children = (
+				890114132A6A0F0F0005F319 /* AutoLayoutPractice.storyboard */,
+				890114152A6A10DE0005F319 /* AutoLayoutExample.storyboard */,
+				8901142A2A6A4AF80005F319 /* WordViewController.swift */,
+			);
+			path = AutoLayoutPractice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +180,8 @@
 			files = (
 				890113FA2A68DABD0005F319 /* LaunchScreen.storyboard in Resources */,
 				890113F72A68DABD0005F319 /* Assets.xcassets in Resources */,
+				890114162A6A10DE0005F319 /* AutoLayoutExample.storyboard in Resources */,
+				890114142A6A0F0F0005F319 /* AutoLayoutPractice.storyboard in Resources */,
 				890113F52A68DABB0005F319 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,6 +199,7 @@
 				890114042A6923120005F319 /* TestViewController.swift in Sources */,
 				890114022A68DBE90005F319 /* DatePickerViewController.swift in Sources */,
 				890114062A692E910005F319 /* NewlyCoinedWordViewController.swift in Sources */,
+				8901142B2A6A4AF80005F319 /* WordViewController.swift in Sources */,
 				8901140E2A6935760005F319 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

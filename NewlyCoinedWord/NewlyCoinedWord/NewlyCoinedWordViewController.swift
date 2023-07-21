@@ -11,6 +11,7 @@ class NewlyCoinedWordViewController: UIViewController {
 
     @IBOutlet var searchTextField: UITextField!
     @IBOutlet var searchResultLabel: UILabel!
+    @IBOutlet var newWordButton: [UIButton]!
 
     var data: [String: String] = [:]
 
@@ -18,7 +19,6 @@ class NewlyCoinedWordViewController: UIViewController {
         super.viewDidLoad()
         configureUI()
         configureData()
-        searchTextField.delegate = self
     }
 
     // For Dynamic Color with CGColor
@@ -26,6 +26,9 @@ class NewlyCoinedWordViewController: UIViewController {
         super.viewWillLayoutSubviews()
         print(#function)
         searchTextField.layer.borderColor = UIColor.customBlackWhite?.cgColor
+        newWordButton.forEach {
+            $0.layer.borderColor = UIColor.customBlackWhite?.cgColor
+        }
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -41,12 +44,26 @@ class NewlyCoinedWordViewController: UIViewController {
         view.endEditing(true)
         searchNewlyCoinedWord(searchTextField.text!)
     }
+
+    @IBAction func didKeyboardReturnEntered(_ sender: UITextField) {
+        searchNewlyCoinedWord(sender.text!)
+    }
+
+    @IBAction func didWordButtonTouched(_ sender: UIButton) {
+        searchTextField.text = sender.currentTitle
+        didKeyboardReturnEntered(searchTextField)
+    }
 }
 
 private extension NewlyCoinedWordViewController {
     func configureUI() {
         searchTextField.addLeftPadding(16.0)
         searchTextField.layer.borderWidth = 4.0
+
+        newWordButton.forEach {
+            $0.layer.cornerRadius = 15.0
+            $0.layer.borderWidth = 2.0
+        }
     }
 
     func configureData() {
@@ -60,16 +77,33 @@ private extension NewlyCoinedWordViewController {
     }
 
     func searchNewlyCoinedWord(_ keyword: String) {
+
+    /*
+        if keyword == "반모" {
+            searchResultLabel.text = "반말모드"
+        } else if keyword == "세최미" {
+            searchResultLabel.text = "세계 최고 미드라이너"
+        } else {
+            searchResultLabel.text = "찾는 결과가 없습니다."
+        }
+    */
+
+    /*
+        let keyword = keyword.lowercased()
+        switch keyword {
+        case "반모":
+            searchResultLabel.text = "반말모드"
+        case "세최미":
+            searchResultLabel.text = "세계 최고 미드라이너"
+        case "jmt", "JMT":
+            searchResultLabel.text = "마시따"
+        default:
+            searchResultLabel.text = "찾는 결과가 없습니다."
+        }
+     */
+
         if let result = data[keyword] {
             searchResultLabel.text = result
         }
-    }
-}
-
-extension NewlyCoinedWordViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        view.endEditing(true)
-        searchNewlyCoinedWord(textField.text!)
-        return true
     }
 }
