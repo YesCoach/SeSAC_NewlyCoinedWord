@@ -259,12 +259,12 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caK-ny-w5i">
                                 <rect key="frame" x="329" y="75" width="48" height="48"/>
-                                <color key="backgroundColor" name="systemBlack"/>
+                                <color key="backgroundColor" name="customBlackWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="2gj-9s-XS7"/>
                                     <constraint firstAttribute="width" constant="48" id="Abh-xX-NPI"/>
                                 </constraints>
-                                <color key="tintColor" name="systemWhite"/>
+                                <color key="tintColor" name="customWhiteBlack"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="magnifyingglass" catalog="system"/>
                                 <connections>
@@ -343,10 +343,10 @@
         <image name="doughnut" width="200" height="251"/>
         <image name="icecream" width="200" height="300"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
-        <namedColor name="systemBlack">
+        <namedColor name="customBlackWhite">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="systemWhite">
+        <namedColor name="customWhiteBlack">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">

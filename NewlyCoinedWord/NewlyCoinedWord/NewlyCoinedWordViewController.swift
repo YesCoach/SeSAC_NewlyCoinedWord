@@ -25,7 +25,7 @@ class NewlyCoinedWordViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         print(#function)
-        searchTextField.layer.borderColor = UIColor.systemBlack?.cgColor
+        searchTextField.layer.borderColor = UIColor.customBlackWhite?.cgColor
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
