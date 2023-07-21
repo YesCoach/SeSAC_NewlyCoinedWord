@@ -271,9 +271,11 @@
                                     <action selector="didSearchButtonTouched:" destination="2vh-DH-j0j" eventType="touchUpInside" id="aXq-G8-ca4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OU-5y-Rcr">
-                                <rect key="frame" x="175" y="394" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OU-5y-Rcr">
+                                <rect key="frame" x="76.666666666666686" y="438.66666666666669" width="240" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="0oM-27-CCb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -283,7 +285,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="0OU-5y-Rcr" firstAttribute="centerY" secondItem="FjC-DH-HNm" secondAttribute="centerY" id="0Oa-63-vzI"/>
                             <constraint firstItem="caK-ny-w5i" firstAttribute="top" secondItem="N39-GC-u76" secondAttribute="top" id="4RD-ka-Dso"/>
+                            <constraint firstItem="0OU-5y-Rcr" firstAttribute="centerX" secondItem="FjC-DH-HNm" secondAttribute="centerX" id="9Wa-gP-kvH"/>
                             <constraint firstItem="FjC-DH-HNm" firstAttribute="trailing" secondItem="caK-ny-w5i" secondAttribute="trailing" constant="16" id="H9J-oL-9Rf"/>
                             <constraint firstItem="N39-GC-u76" firstAttribute="bottom" secondItem="caK-ny-w5i" secondAttribute="bottom" id="cn3-CZ-DH1"/>
                             <constraint firstItem="N39-GC-u76" firstAttribute="leading" secondItem="FjC-DH-HNm" secondAttribute="leading" constant="16" id="hu3-Kb-YKP"/>
