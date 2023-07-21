@@ -13,7 +13,7 @@ class NewlyCoinedWordViewController: UIViewController {
     @IBOutlet var searchResultLabel: UILabel!
     @IBOutlet var newWordButton: [UIButton]!
 
-    var data: [String: String] = [:]
+    private var data: [String: String] = [:]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +62,9 @@ class NewlyCoinedWordViewController: UIViewController {
     @IBAction func didWordButtonTouched(_ sender: UIButton) {
         searchTextField.text = sender.currentTitle
         didKeyboardReturnEntered(searchTextField)
+
+        // 키보드가 호출된 상태에서 wordButton을 탭할 경우, 키보드가 내려가지 않음
+        view.endEditing(true)
     }
 }
 
