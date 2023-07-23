@@ -11,6 +11,7 @@ class BaeminViewController: UIViewController {
 
     @IBOutlet var searchTextField: UITextField!
     @IBOutlet var topView: UIView!
+    @IBOutlet var homeCardView: [UIView]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +28,20 @@ private extension BaeminViewController {
         topView.clipsToBounds = true
         topView.layer.cornerRadius = 10
         topView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+
+        homeCardView.forEach {
+            $0.clipsToBounds = true
+            $0.layer.cornerRadius = 10.0
+        }
     }
 
     func configureNavigationBar() {
-        navigationController?.navigationBar.backgroundColor = .systemMint
+
+        let navigationBarAppearance = UINavigationBarAppearance()
+        navigationBarAppearance.backgroundColor = .systemMint
+
+        navigationController?.navigationBar.standardAppearance = navigationBarAppearance
+        navigationController?.navigationBar.scrollEdgeAppearance = navigationBarAppearance
         navigationController?.navigationBar.tintColor = .white
     }
 }

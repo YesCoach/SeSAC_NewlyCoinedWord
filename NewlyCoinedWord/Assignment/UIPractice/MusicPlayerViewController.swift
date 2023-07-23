@@ -20,7 +20,7 @@ class MusicPlayerViewController: UIViewController {
 private extension MusicPlayerViewController {
     func configureUI() {
         similarButton.layer.cornerRadius = 15.0
-        similarButton.layer.borderWidth = 2.0
+        similarButton.layer.borderWidth = 1.0
         similarButton.layer.borderColor = UIColor.lightGray.cgColor
     }
 }

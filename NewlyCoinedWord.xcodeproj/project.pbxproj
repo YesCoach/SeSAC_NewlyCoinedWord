@@ -78,11 +78,8 @@
 				890113EF2A68DABB0005F319 /* SceneDelegate.swift */,
 				8901140C2A6935670005F319 /* Extensions */,
 				890114072A6932260005F319 /* DatePicker */,
-				890114082A6932360005F319 /* NewlyCoinedWord */,
 				8901142C2A6A4AFD0005F319 /* AutoLayoutPractice */,
-				8901142D2A6A7FD60005F319 /* ProfileViewController.swift */,
-				8901142F2A6A9C6B0005F319 /* MusicPlayerViewController.swift */,
-				890114312A6CAA4A0005F319 /* BaeminViewController.swift */,
+				894DE9BD2A6D70B30088422C /* Assignment */,
 				890113F32A68DABB0005F319 /* Main.storyboard */,
 				890113F82A68DABD0005F319 /* LaunchScreen.storyboard */,
 				890113F62A68DABD0005F319 /* Assets.xcassets */,
@@ -124,6 +121,25 @@
 				8901142A2A6A4AF80005F319 /* WordViewController.swift */,
 			);
 			path = AutoLayoutPractice;
+			sourceTree = "<group>";
+		};
+		894DE9BC2A6D707C0088422C /* UIPractice */ = {
+			isa = PBXGroup;
+			children = (
+				8901142D2A6A7FD60005F319 /* ProfileViewController.swift */,
+				8901142F2A6A9C6B0005F319 /* MusicPlayerViewController.swift */,
+				890114312A6CAA4A0005F319 /* BaeminViewController.swift */,
+			);
+			path = UIPractice;
+			sourceTree = "<group>";
+		};
+		894DE9BD2A6D70B30088422C /* Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				890114082A6932360005F319 /* NewlyCoinedWord */,
+				894DE9BC2A6D707C0088422C /* UIPractice */,
+			);
+			path = Assignment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
