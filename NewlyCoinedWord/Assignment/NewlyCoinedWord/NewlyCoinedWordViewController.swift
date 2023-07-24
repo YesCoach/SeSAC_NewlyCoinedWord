@@ -56,6 +56,16 @@ class NewlyCoinedWordViewController: UIViewController {
 
         // 키보드가 호출된 상태에서 wordButton을 탭할 경우, 키보드가 내려가지 않음
         view.endEditing(true)
+
+        // 버튼 터치했을때 다른 값으로 바꾸기
+        if let currentTitle = sender.currentTitle,
+           let index = buttonTitle.firstIndex(of: currentTitle),
+           let title = Set(data.keys).subtracting(Set(buttonTitle)).randomElement() {
+            sender.setTitle(title, for: .normal)
+
+            buttonTitle.remove(at: index)
+            buttonTitle.append(title)
+        }
     }
 }
 
@@ -80,10 +90,16 @@ private extension NewlyCoinedWordViewController {
             "세최미": "세계 최고 미드라이너",
             "사바사": "사람 바이 사람"
         ]
-        buttonTitle = ["알잘딱깔센", "햄최몇", "오운완", "반모", "세최미"]
+
+        configureButtonData()
+    }
+
+    func configureButtonData() {
+        let keys = Array(data.keys).shuffled()
 
         newWordButton.forEach {
-            $0.setTitle(buttonTitle[$0.tag], for: .normal)
+            $0.setTitle(keys[$0.tag], for: .normal)
+            buttonTitle.append(keys[$0.tag])
         }
     }
 
@@ -98,7 +114,6 @@ private extension NewlyCoinedWordViewController {
         }
         searchResultLabel.text = result
     }
-
     func presentAlert(title: String, message: String, style: UIAlertController.Style) {
         let alert = UIAlertController(
             title: title,
