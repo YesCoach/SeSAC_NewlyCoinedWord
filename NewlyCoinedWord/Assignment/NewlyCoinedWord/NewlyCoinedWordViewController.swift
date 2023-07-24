@@ -77,10 +77,10 @@ private extension NewlyCoinedWordViewController {
             "햄최몇": "햄버거 최대 몇개?",
             "오운완": "오늘 운동 완료",
             "반모": "반역모의",
-            "세최미": "세계 최고 미드라이너"
+            "세최미": "세계 최고 미드라이너",
+            "사바사": "사람 바이 사람"
         ]
 
-        buttonTitle = ["오운완", "반모", "세최미", "햄최몇", "알잘딱깔센"]
         newWordButton.forEach {
             $0.setTitle(buttonTitle[$0.tag], for: .normal)
         }
@@ -88,25 +88,24 @@ private extension NewlyCoinedWordViewController {
 
     func searchNewlyCoinedWord(_ keyword: String) {
         guard !keyword.isEmpty && keyword.count > 1 else {
-            let alert = UIAlertController(
-                title: "",
-                message: "최소 두글자 이상 입력해주세요",
-                preferredStyle: .alert)
-            let alertAction = UIAlertAction(title: "확인", style: .default)
-            alert.addAction(alertAction)
-            present(alert, animated: true)
+            presentAlert(title: "", message: "최소 두글자 이상 입력하세요", style: .alert)
             return
         }
         guard let result = data[keyword] else {
-            let alert = UIAlertController(
-                title: "",
-                message: "해당하는 신조어에 대한 정보가 없어요",
-                preferredStyle: .alert)
-            let alertAction = UIAlertAction(title: "확인", style: .default)
-            alert.addAction(alertAction)
-            present(alert, animated: true)
+            presentAlert(title: "", message: "해당하는 신조어에 대한 정보가 없어요", style: .alert)
             return
         }
         searchResultLabel.text = result
+    }
+
+    func presentAlert(title: String, message: String, style: UIAlertController.Style) {
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: style
+        )
+        let alertAction = UIAlertAction(title: "확인", style: .default)
+        alert.addAction(alertAction)
+        present(alert, animated: true)
     }
 }
