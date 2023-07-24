@@ -22,16 +22,6 @@ class NewlyCoinedWordViewController: UIViewController {
         configureData()
     }
 
-/*
-    func getRandomWord() -> String {
-        let random = ["고래밥", "칙촉", "카스타드", "메로나", "월드콘"]
-        let result = random.randomElement()!
-        print(result)
-
-        return result
-    }
-*/
-
     // For Dynamic Color with CGColor
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
@@ -97,33 +87,26 @@ private extension NewlyCoinedWordViewController {
     }
 
     func searchNewlyCoinedWord(_ keyword: String) {
-        if let result = data[keyword] {
-            searchResultLabel.text = result
+        guard !keyword.isEmpty && keyword.count > 1 else {
+            let alert = UIAlertController(
+                title: "",
+                message: "최소 두글자 이상 입력해주세요",
+                preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "확인", style: .default)
+            alert.addAction(alertAction)
+            present(alert, animated: true)
+            return
         }
-
-    /*
-        if keyword == "반모" {
-            searchResultLabel.text = "반말모드"
-        } else if keyword == "세최미" {
-            searchResultLabel.text = "세계 최고 미드라이너"
-        } else {
-            searchResultLabel.text = "찾는 결과가 없습니다."
+        guard let result = data[keyword] else {
+            let alert = UIAlertController(
+                title: "",
+                message: "해당하는 신조어에 대한 정보가 없어요",
+                preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "확인", style: .default)
+            alert.addAction(alertAction)
+            present(alert, animated: true)
+            return
         }
-    */
-
-    /*
-        let keyword = keyword.lowercased()
-        switch keyword {
-        case "반모":
-            searchResultLabel.text = "반말모드"
-        case "세최미":
-            searchResultLabel.text = "세계 최고 미드라이너"
-        case "jmt", "JMT":
-            searchResultLabel.text = "마시따"
-        default:
-            searchResultLabel.text = "찾는 결과가 없습니다."
-        }
-     */
-
+        searchResultLabel.text = result
     }
 }
