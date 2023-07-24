@@ -12,11 +12,14 @@ class BaeminViewController: UIViewController {
     @IBOutlet var searchTextField: UITextField!
     @IBOutlet var topView: UIView!
     @IBOutlet var homeCardView: [UIView]!
+    @IBOutlet var scrollView: UIScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         configureUI()
         configureNavigationBar()
+        scrollView.delegate = self
     }
 }
 
@@ -43,5 +46,14 @@ private extension BaeminViewController {
         navigationController?.navigationBar.scrollEdgeAppearance = navigationBarAppearance
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.shadowImage = UIImage()
+    }
+}
+
+// MARK: - UIScrollViewDelegate 구현부
+
+extension BaeminViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        // scrollView의 bottom Bounce를 무시하는 로직
+        scrollView.bounces = scrollView.contentOffset.y < 20
     }
 }

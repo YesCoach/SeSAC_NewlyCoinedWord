@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2vh-DH-j0j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OcT-Bi-DXv">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -1294,6 +1294,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="scrollView" destination="1yq-sl-9l6" id="eOv-BG-Bs7"/>
                         <outlet property="searchTextField" destination="9GA-Qt-sze" id="XVc-4x-9C8"/>
                         <outlet property="topView" destination="hMd-iX-wxE" id="iNe-gK-fha"/>
                         <outletCollection property="homeCardView" destination="2wI-JF-tAa" collectionClass="NSMutableArray" id="aFC-vg-cyr"/>
