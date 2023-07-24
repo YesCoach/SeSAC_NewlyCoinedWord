@@ -36,12 +36,12 @@ private extension BaeminViewController {
     }
 
     func configureNavigationBar() {
-
         let navigationBarAppearance = UINavigationBarAppearance()
         navigationBarAppearance.backgroundColor = .systemMint
 
         navigationController?.navigationBar.standardAppearance = navigationBarAppearance
         navigationController?.navigationBar.scrollEdgeAppearance = navigationBarAppearance
         navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.shadowImage = UIImage()
     }
 }

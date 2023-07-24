@@ -14,6 +14,7 @@ class NewlyCoinedWordViewController: UIViewController {
     @IBOutlet var newWordButton: [UIButton]!
 
     private var data: [String: String] = [:]
+    private var buttonTitle: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,6 +89,11 @@ private extension NewlyCoinedWordViewController {
             "반모": "반역모의",
             "세최미": "세계 최고 미드라이너"
         ]
+
+        buttonTitle = ["오운완", "반모", "세최미", "햄최몇", "알잘딱깔센"]
+        newWordButton.forEach {
+            $0.setTitle(buttonTitle[$0.tag], for: .normal)
+        }
     }
 
     func searchNewlyCoinedWord(_ keyword: String) {
