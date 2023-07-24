@@ -56,16 +56,6 @@ class NewlyCoinedWordViewController: UIViewController {
 
         // 키보드가 호출된 상태에서 wordButton을 탭할 경우, 키보드가 내려가지 않음
         view.endEditing(true)
-
-        // 버튼 터치했을때 다른 값으로 바꾸기
-        if let currentTitle = sender.currentTitle,
-           let index = buttonTitle.firstIndex(of: currentTitle),
-           let title = Set(data.keys).subtracting(Set(buttonTitle)).randomElement() {
-            sender.setTitle(title, for: .normal)
-
-            buttonTitle.remove(at: index)
-            buttonTitle.append(title)
-        }
     }
 }
 
@@ -80,7 +70,6 @@ private extension NewlyCoinedWordViewController {
             $0.contentEdgeInsets = .init(top: 4, left: 8, bottom: 4, right: 8)
         }
     }
-
     func configureData() {
         data = [
             "알잘딱깔센": "알아서 잘 딱 깔끔하게 센스있게",
@@ -90,7 +79,6 @@ private extension NewlyCoinedWordViewController {
             "세최미": "세계 최고 미드라이너",
             "사바사": "사람 바이 사람"
         ]
-
         configureButtonData()
     }
 
@@ -100,6 +88,17 @@ private extension NewlyCoinedWordViewController {
         newWordButton.forEach {
             $0.setTitle(keys[$0.tag], for: .normal)
             buttonTitle.append(keys[$0.tag])
+        }
+    }
+
+    // 현재 노출된 것 이외의 신조어를 버튼의 타이틀로 설정합니다
+    func changeButtonTitle(button: UIButton) {
+        if let currentTitle = button.currentTitle,
+           let currentIndex = buttonTitle.firstIndex(of: currentTitle),
+           let newTitle = Set(data.keys).subtracting(Set(buttonTitle)).randomElement() {
+            button.setTitle(newTitle, for: .normal)
+            buttonTitle.remove(at: currentIndex)
+            buttonTitle.insert(newTitle, at: currentIndex)
         }
     }
 
@@ -113,7 +112,13 @@ private extension NewlyCoinedWordViewController {
             return
         }
         searchResultLabel.text = result
+
+        if let index = buttonTitle.firstIndex(of: keyword),
+           let button = newWordButton.filter { $0.tag == index }.first {
+               changeButtonTitle(button: button)
+        }
     }
+
     func presentAlert(title: String, message: String, style: UIAlertController.Style) {
         let alert = UIAlertController(
             title: title,
