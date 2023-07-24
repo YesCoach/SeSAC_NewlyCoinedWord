@@ -80,6 +80,7 @@ private extension NewlyCoinedWordViewController {
             "세최미": "세계 최고 미드라이너",
             "사바사": "사람 바이 사람"
         ]
+        buttonTitle = ["알잘딱깔센", "햄최몇", "오운완", "반모", "세최미"]
 
         newWordButton.forEach {
             $0.setTitle(buttonTitle[$0.tag], for: .normal)
