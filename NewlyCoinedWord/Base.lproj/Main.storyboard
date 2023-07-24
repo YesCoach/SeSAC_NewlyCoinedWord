@@ -374,11 +374,11 @@
                     <connections>
                         <outlet property="searchResultLabel" destination="0OU-5y-Rcr" id="d4P-8V-Df3"/>
                         <outlet property="searchTextField" destination="N39-GC-u76" id="OSN-Oe-iyD"/>
-                        <outletCollection property="newWordButton" destination="duf-eu-KR4" collectionClass="NSMutableArray" id="PSl-l2-l72"/>
-                        <outletCollection property="newWordButton" destination="RJZ-n5-Nq4" collectionClass="NSMutableArray" id="V9B-0z-wJ9"/>
-                        <outletCollection property="newWordButton" destination="a56-ya-wd4" collectionClass="NSMutableArray" id="A2j-SZ-6a6"/>
-                        <outletCollection property="newWordButton" destination="aaC-KL-LAm" collectionClass="NSMutableArray" id="gDv-OK-TzL"/>
-                        <outletCollection property="newWordButton" destination="PHG-Zn-gCh" collectionClass="NSMutableArray" id="MKU-Nh-zdg"/>
+                        <outletCollection property="newWordButtonCollection" destination="duf-eu-KR4" collectionClass="NSMutableArray" id="PSl-l2-l72"/>
+                        <outletCollection property="newWordButtonCollection" destination="RJZ-n5-Nq4" collectionClass="NSMutableArray" id="V9B-0z-wJ9"/>
+                        <outletCollection property="newWordButtonCollection" destination="a56-ya-wd4" collectionClass="NSMutableArray" id="A2j-SZ-6a6"/>
+                        <outletCollection property="newWordButtonCollection" destination="aaC-KL-LAm" collectionClass="NSMutableArray" id="gDv-OK-TzL"/>
+                        <outletCollection property="newWordButtonCollection" destination="PHG-Zn-gCh" collectionClass="NSMutableArray" id="MKU-Nh-zdg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gti-yO-epH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

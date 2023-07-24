@@ -7,14 +7,20 @@
 
 import UIKit
 
-class NewlyCoinedWordViewController: UIViewController {
+final class NewlyCoinedWordViewController: UIViewController {
+
+    // MARK: - IBOutlets
 
     @IBOutlet var searchTextField: UITextField!
     @IBOutlet var searchResultLabel: UILabel!
-    @IBOutlet var newWordButton: [UIButton]!
+    @IBOutlet var newWordButtonCollection: [UIButton]!
+
+    // MARK: - Properties
 
     private var data: [String: String] = [:]
     private var currentlyShownData: [String] = []
+
+    // MARK: - View Life Cycles
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +28,13 @@ class NewlyCoinedWordViewController: UIViewController {
         configureData()
     }
 
-    // For Dynamic Color with CGColor
+    // 다크모드 대응을 위한 로직
+    // trait이 업데이트되는 시점에 dynamicColor의 resolved color를 cgColor로써 적용
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         print(#function)
         searchTextField.layer.borderColor = UIColor.customBlackWhite?.cgColor
-        newWordButton.forEach {
+        newWordButtonCollection.forEach {
             $0.layer.borderColor = UIColor.customBlackWhite?.cgColor
         }
     }
@@ -36,6 +43,8 @@ class NewlyCoinedWordViewController: UIViewController {
         super.traitCollectionDidChange(previousTraitCollection)
         print(#function)
     }
+
+    // MARK: - IBActions
 
     @IBAction func didBackgroundTouched(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
@@ -54,17 +63,19 @@ class NewlyCoinedWordViewController: UIViewController {
         searchTextField.text = sender.currentTitle
         didKeyboardReturnEntered(searchTextField)
 
-        // 키보드가 호출된 상태에서 wordButton을 탭할 경우, 키보드가 내려가지 않음
+        // 키보드가 호출된 상태에서 wordButton을 탭할 경우, 키보드가 내려가지 않으므로 하단 코드 추가
         view.endEditing(true)
     }
 }
+
+// MARK: - Methods
 
 private extension NewlyCoinedWordViewController {
     func configureUI() {
         searchTextField.addLeftPadding(16.0)
         searchTextField.layer.borderWidth = 4.0
 
-        newWordButton.forEach {
+        newWordButtonCollection.forEach {
             $0.layer.cornerRadius = 5.0
             $0.layer.borderWidth = 2.0
             $0.contentEdgeInsets = .init(top: 4, left: 8, bottom: 4, right: 8)
@@ -89,7 +100,7 @@ private extension NewlyCoinedWordViewController {
 
         // newWordButton의 tag를 인덱스로 활용해서 순차적으로 setTitle 수행
         // 현재 버튼에 표시된 신조어들은 따로 배열로 저장
-        newWordButton.forEach {
+        newWordButtonCollection.forEach {
             let newlyCoinedWord = newlyCoinedWordList[$0.tag]
             $0.setTitle(newlyCoinedWord, for: .normal)
             currentlyShownData.append(newlyCoinedWord)
@@ -112,7 +123,7 @@ private extension NewlyCoinedWordViewController {
     /// - Parameter keyword: 현재 선택된 신조어 문자열
     func updateButtonTitle(of keyword: String) {
         guard let currentIndex = currentlyShownData.firstIndex(of: keyword),
-              let button = newWordButton.filter({ $0.tag == currentIndex }).first
+              let button = newWordButtonCollection.filter({ $0.tag == currentIndex }).first
         else { return }
 
         // Set의 subtracting을 활용한, 현재 보여지지 않는 신조어 랜덤으로 뽑아오기
