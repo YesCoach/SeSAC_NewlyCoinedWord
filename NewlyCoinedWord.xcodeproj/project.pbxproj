@@ -22,6 +22,7 @@
 		8901142E2A6A7FD60005F319 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901142D2A6A7FD60005F319 /* ProfileViewController.swift */; };
 		890114302A6A9C6B0005F319 /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901142F2A6A9C6B0005F319 /* MusicPlayerViewController.swift */; };
 		890114322A6CAA4A0005F319 /* BaeminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890114312A6CAA4A0005F319 /* BaeminViewController.swift */; };
+		89C3C29C2A6FAD7F00F08B2C /* NewlyCoinedWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C3C29B2A6FAD7F00F08B2C /* NewlyCoinedWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		8901142D2A6A7FD60005F319 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8901142F2A6A9C6B0005F319 /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
 		890114312A6CAA4A0005F319 /* BaeminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaeminViewController.swift; sourceTree = "<group>"; };
+		89C3C29B2A6FAD7F00F08B2C /* NewlyCoinedWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlyCoinedWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				890114052A692E910005F319 /* NewlyCoinedWordViewController.swift */,
+				89C3C29B2A6FAD7F00F08B2C /* NewlyCoinedWord.swift */,
 			);
 			path = NewlyCoinedWord;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				8901142B2A6A4AF80005F319 /* WordViewController.swift in Sources */,
 				8901142E2A6A7FD60005F319 /* ProfileViewController.swift in Sources */,
 				890114302A6A9C6B0005F319 /* MusicPlayerViewController.swift in Sources */,
+				89C3C29C2A6FAD7F00F08B2C /* NewlyCoinedWord.swift in Sources */,
 				8901140E2A6935760005F319 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
